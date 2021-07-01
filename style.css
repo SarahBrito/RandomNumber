@@ -1,0 +1,103 @@
+/*==========FONTES==========*/
+
+@import url('https://fonts.googleapis.com/css2?family=Akaya+Kanadaka&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Jomhuria&display=swap');
+
+/*==========ANIMAÇÃO==========*/
+
+@keyframes colors {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+/*==========PÁGINA==========*/
+
+body {
+  
+  background: linear-gradient(45deg, #3d348b, #7678ed, #ff9770, #ffd670) ;
+  background-size: 300% 300%;
+  animation: colors 15s ease infinite;  
+}
+
+/*==========CABEÇALHO==========*/
+
+h1{
+  font-family: 'Akaya Kanadaka', cursive;
+  color:azure;
+}
+
+h2{
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 15pt;
+  text-align: center;
+}
+
+span {
+  color: greenyellow;
+}
+
+/*==========APLICAÇÃO==========*/
+
+section {
+  height: 550px;
+  padding-top: 4rem;
+}
+
+.application {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+#result {
+  width: 500px;
+  border-style: double;
+  border-color: whitesmoke;
+  height: 200px;
+  display: flex;
+  align-items: center;
+  align-content: center;
+  border-radius: 0.25rem;
+  margin: auto;
+  font-family: 'Jomhuria', cursive;
+  font-size: 50pt;
+}
+
+input {
+  height: 20px;
+  width: 100px;
+}
+
+#button {
+  height: 1.7rem;
+  display: inline-flex;
+  align-items: center;
+  padding: 0 2rem;
+  background: rgb(128, 87, 194);
+  color:aliceblue;
+  border: none;
+  border-radius: 5px;
+  font-family: 'Jomhuria', cursive;
+  font-size: 22pt; 
+}
+
+#button:hover{
+  background:greenyellow;
+  transition: background 0.4s;
+}
+
+#gerador {
+  padding-top: 20px;
+  font-family: 'Jomhuria', cursive;
+  font-size: 22pt;
+}
+
+
+
