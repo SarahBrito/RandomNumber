@@ -45,59 +45,64 @@ span {
 
 /*==========APLICAÇÃO==========*/
 
-section {
-  height: 550px;
-  padding-top: 4rem;
-}
-
-.application {
-  display: flex;
-  align-items: center;
+.main {
+  display: grid;
   justify-content: center;
+  text-align: center;
+  padding-top: 4rem;
+  
 }
 
-#result {
+.main__result {
+
   width: 500px;
+  height: 200px;
   border-style: double;
   border-color: whitesmoke;
-  height: 200px;
   display: flex;
+  justify-content: center;
   align-items: center;
-  align-content: center;
-  border-radius: 0.25rem;
-  margin: auto;
   font-family: 'Jomhuria', cursive;
   font-size: 50pt;
+  
 }
 
 input {
-  height: 20px;
   width: 100px;
+  height: 24px;
+  margin-left: 0.2rem;
+  margin-right: 0.4rem;
+  border-radius: 5px;
+  border: none;
 }
 
-#button {
+.main__input {
+  
+  padding-top: 1rem;
+  font-family: 'Jomhuria', cursive;
+  font-size: 22pt;
+  
+}
+
+.main__btn {
+  
+  font-family: 'Jomhuria', cursive;
+  font-size: 22pt;
   height: 1.7rem;
   display: inline-flex;
   align-items: center;
   padding: 0 2rem;
   background: rgb(128, 87, 194);
   color:aliceblue;
-  border: none;
-  border-radius: 5px;
-  font-family: 'Jomhuria', cursive;
-  font-size: 22pt; 
 }
 
-#button:hover{
-  background:greenyellow;
+.main__btn:hover{
+  background:#adff2f;
   transition: background 0.4s;
 }
 
-#gerador {
-  padding-top: 20px;
-  font-family: 'Jomhuria', cursive;
-  font-size: 22pt;
+.main__error {
+  font: normal arial;
+  font-size: 11pt;
+  color: red;
 }
-
-
-

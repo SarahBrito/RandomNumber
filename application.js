@@ -5,10 +5,20 @@ function getRandomIntInclusive(min, max) {
 }
 
 
-function gerarNumero(){
-  let n1 = document.querySelector('#n1').value
-  let n2 = document.querySelector('#n2').value
-  document.querySelector('#result').innerHTML = getRandomIntInclusive(Number(n1), Number(n2));
+function generateNumber(){
+  
+  let min = document.querySelector('#min').value
+  let max = document.querySelector('#max').value
+  document.querySelector('.main__result').innerHTML = getRandomIntInclusive(Number(min), Number(max));
+  
+  if (Number(max) < Number(min)){
+    max = document.querySelector('#max').value = ''
+    document.querySelector('.main__result').innerHTML = ''
+    document.querySelector('.main__error').innerHTML = 'o valor minimo não poder ser maior que o valor máximo'
+}else {
+  document.querySelector('.main__error').innerHTML = ''
+}
+
 }
 
 
