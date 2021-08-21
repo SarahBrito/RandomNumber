@@ -3,27 +3,12 @@
 @import url('https://fonts.googleapis.com/css2?family=Akaya+Kanadaka&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Jomhuria&display=swap');
 
-/*==========ANIMAÇÃO==========*/
-
-@keyframes colors {
-  0% {
-    background-position: 0% 50%;
-  }
-  50% {
-    background-position: 100% 50%;
-  }
-  100% {
-    background-position: 0% 50%;
-  }
-}
 
 /*==========PÁGINA==========*/
 
 body {
-  
-  background: linear-gradient(45deg, #3d348b, #7678ed, #ff9770, #ffd670) ;
-  background-size: 300% 300%;
-  animation: colors 15s ease infinite;  
+  background: linear-gradient(90deg, #3F2B96 0%, #A8C0FF 100%);
+     
 }
 
 /*==========CABEÇALHO==========*/
@@ -55,54 +40,62 @@ span {
 
 .main__result {
 
-  width: 500px;
+  width: 450px;
   height: 200px;
-  border-style: double;
+  border-style: solid;
   border-color: whitesmoke;
+  border-width: 2px;
+  
   display: flex;
   justify-content: center;
   align-items: center;
   font-family: 'Jomhuria', cursive;
   font-size: 50pt;
+  border-radius: 24px;
+  box-shadow: 0px 1px 1px 1px rgb(248, 244, 244);
   
 }
 
 input {
   width: 100px;
-  height: 24px;
+  height: 30px;
   margin-left: 0.2rem;
   margin-right: 0.4rem;
-  border-radius: 5px;
+  border-radius: 6px;
   border: none;
+  padding-left: 6px;
 }
 
 .main__input {
   
   padding-top: 1rem;
   font-family: 'Jomhuria', cursive;
-  font-size: 22pt;
+  font-size: 24pt;
   
 }
 
 .main__btn {
   
   font-family: 'Jomhuria', cursive;
-  font-size: 22pt;
-  height: 1.7rem;
+  font-size: 24pt;
+  height: 2.2rem;
   display: inline-flex;
   align-items: center;
   padding: 0 2rem;
-  background: rgb(128, 87, 194);
+  background: #5d48d1;
   color:aliceblue;
+  border-radius: 8px;
+  opacity: 0.8;
 }
 
 .main__btn:hover{
-  background:#adff2f;
+  opacity: 1;
   transition: background 0.4s;
+  cursor: pointer;
 }
 
 .main__error {
-  font: normal arial;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
   font-size: 11pt;
   color: red;
 }
