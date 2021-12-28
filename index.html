@@ -4,12 +4,13 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>RandomNumber</title>
+    <meta name="description" content="Gerador de número aleatório">
+    <title>Random Number</title>
     <link rel="stylesheet" href="style.css">
   </head>
   <body>
     
-    <h1><span>Random</span>Number</h1>
+    <h1>Random Number</h1>
     
     <h2>Defina um valor <span>minimio</span> e <span>máximo</span>  para gerar um número aleatório</h2>
     
@@ -18,13 +19,13 @@
       <div class='main__result'></div>
       
       <div class='main__input'>
-        Min  <input  type="number" name="min" id="min"> 
-        Máx  <input type="number" name="max" id="max">
+        <input  type="number" name="min"  class="input" id="min" placeholder="Min" aria-label="Número minimo" > 
+        <input type="number" name="max" class="input" id="max" placeholder="Máx" aria-label="Número máximo" >
         <input type="button" value="Gerar" class="main__btn" onclick= "generateNumber()">
         
       </div>
       <div class="main__error"></div>
     </section>
-    <script src="application.js"></script>
+    <script src="script.js"></script>
   </body>
 </html>
