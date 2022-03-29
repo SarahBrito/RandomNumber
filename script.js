@@ -9,20 +9,23 @@ function generateNumber(){
   
   let min = document.querySelector('#min').value 
   let max = document.querySelector('#max').value 
-  let msgError = document.querySelector(".main__error")
 
   if (Number(max) < Number(min)){
     
-    msgError.style.display= "block"
-    
     document.querySelector('.main__result').innerHTML = ''
-    msgError.innerHTML = 'o valor minimo não poder ser maior que o valor máximo'
+   
+    Swal.fire({
+      
+      icon: 'error',
+      title: 'Oops...',
+      text: 'O valor mínimo não pode ser maior que o valor máximo',
+      confirmButtonColor: '#34e89e'
+      
+    })
     
 
   }else {
     document.querySelector('.main__result').innerHTML = getRandomIntInclusive(Number(min), Number(max));
-    document.querySelector('.main__error').innerHTML = ''
-    msgError.style.display= "none"
   }
 }
 

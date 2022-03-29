@@ -9,23 +9,26 @@
 /*==========PÁGINA==========*/
 
 body {
-  background: #242261;
-     
+  background: #34e89e;
+  background: -webkit-linear-gradient(to left, #0f3443, #34e89e); 
+  background: linear-gradient(to left, #0f3443, #34e89e);
+  
 }
 
 /*==========CABEÇALHO==========*/
 
 h1{
   padding: 16px;
-  color: #63a6f7;
+  color: #f3f3f3;
 }
 
 h2{
   
   font-size: 15pt;
   text-align: center;
-  color: #f5f5f5;
+  color: #f3f3f3;
   margin-top: 48px;
+  margin-bottom: 24px;
   padding: 8px;
 
 }
@@ -38,55 +41,73 @@ span {
 
 .main {
   display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-areas: "result input" 
+                        "button button";
   justify-content: center;
   text-align: center;
-  padding-top: 4rem;
-  
+  width: 550px;
+  background-color: #f3f3f3;
+  margin: 0 auto;
+  border-radius: 12px;
+  padding: 36px 12px;
+  -webkit-box-shadow: -1px 2px 15px 0px rgba(0,0,0,0.61); 
+  box-shadow: -1px 2px 15px 0px rgba(0,0,0,0.61);
 }
 
 .main__result {
 
-  width: 450px;
+  width: 200px;
   height: 200px;
   display: flex;
   justify-content: center;
   align-items: center;
-  color:#63a6f7;
-  border: 2px solid #63a6f7;
-  font-size: 50pt;
-  border-radius: 24px;
-  -webkit-box-shadow: 0px 2px 2px 0px rgba(0,0,0,0.4);
-  -moz-box-shadow: 0px 2px 2px 0px rgba(0,0,0,0.4);
-  box-shadow: 0px 2px 2px 0px rgba(0,0,0,0.4);
-
+  color: #2a2a2c;
+  font-size: 36pt;
+  grid-area: result;
+  margin: 0 auto;
 }
 
 .input {
-  width: 100px;
-  border-radius: 4px;
+  
+  width: 150px;
   border: none;
-  padding: 8px;
+  border-bottom: 3px solid #63a6f7;
+  padding: 12px 24px;
   outline: none;
   font-weight: 700;
+  color:#2a2a2c;
+  background-color: #f3f3f3;
+  font-size: 16px;
 }
 
+.input:focus{
+  border-bottom: 3px solid #34e89e;
+}
 .main__input {
   display: flex;
+  width: 200px;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
   gap: 12px;
-  padding: 0 8px;
-  margin-top: 36px;
+  grid-area: input;
+  
+}
+
+.button {
+  grid-area: button;
 }
 
 .main__btn {
+  width: 400px; 
   background: #63a6f7;
   color:#272669;
   border: none;
-  padding: 8px 30px;
+  padding: 10px 30px;
   border-radius: 4px;
   font-weight: 700;
-  font-size: 14px;
+  font-size: 18px;
 }
 
 .main__btn:hover{
@@ -95,18 +116,6 @@ span {
   cursor: pointer;
 }
 
-.main__error {
-  display: none;
-  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-  background: #E3BFBC;
-  font-size: 12pt;
-  padding: 8px 0;
-  border-radius: 4px;
-  margin: 36px 12px;
-  border-left: 4px solid #c43541;
-  color: #c43541;
- 
-}
 
 
 @media screen and (max-width:500px) {
