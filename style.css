@@ -9,10 +9,9 @@
 /*==========PÁGINA==========*/
 
 body {
-  background: #34e89e;
-  background: -webkit-linear-gradient(to left, #0f3443, #34e89e); 
-  background: linear-gradient(to left, #0f3443, #34e89e);
-  
+  background: #001233;
+  background-size: cover;
+  height: 100vh;
 }
 
 /*==========CABEÇALHO==========*/
@@ -20,21 +19,21 @@ body {
 h1{
   padding: 16px;
   color: #f3f3f3;
+  text-align: center;
 }
 
 h2{
   
-  font-size: 15pt;
+  font-size: 14pt;
   text-align: center;
   color: #f3f3f3;
   margin-top: 48px;
   margin-bottom: 24px;
   padding: 8px;
-
 }
 
 span {
-  color: #63a6f7;
+  color: #0466c8;
 }
 
 /*==========APLICAÇÃO==========*/
@@ -62,7 +61,7 @@ span {
   display: flex;
   justify-content: center;
   align-items: center;
-  color: #2a2a2c;
+  color: #001233;
   font-size: 36pt;
   grid-area: result;
   margin: 0 auto;
@@ -72,18 +71,19 @@ span {
   
   width: 150px;
   border: none;
-  border-bottom: 3px solid #63a6f7;
+  border-bottom: 3px solid #001233;
   padding: 12px 24px;
   outline: none;
   font-weight: 700;
-  color:#2a2a2c;
+  color:#001233;
   background-color: #f3f3f3;
   font-size: 16px;
 }
 
 .input:focus{
-  border-bottom: 3px solid #34e89e;
+  border-bottom: 3px solid #0466c8;
 }
+
 .main__input {
   display: flex;
   width: 200px;
@@ -92,60 +92,41 @@ span {
   align-items: center;
   gap: 12px;
   grid-area: input;
-  
 }
 
-.button {
+.main__button {
   grid-area: button;
 }
 
-.main__btn {
-  width: 400px; 
-  background: #63a6f7;
-  color:#272669;
+.button {
+  width: 400px;
+  background: #0466c8;
+  color:#001845;
   border: none;
   padding: 10px 30px;
   border-radius: 4px;
   font-weight: 700;
   font-size: 18px;
+  transition: 0.4s ease-in-out;
 }
 
-.main__btn:hover{
-  opacity: 0.9;
-  transition: background 0.4s;
+.button:hover{
+  background: #0353a4;
   cursor: pointer;
 }
 
-
-
 @media screen and (max-width:500px) {
-  h1 {
-    
-    text-align: center;
-  }
-}
-
-@media screen and (max-width:480px){
-  
-  .main__result {
-    width: 100%;
-  }
-}
-
-@media screen and (max-width: 375px){
-
-  .main__result {
-    margin-top: 48px;
-  }
-
-  .main__input {
-    max-width: 90%;
-    flex-wrap: wrap;
-    gap: 18px;
-    margin: 24px auto;
-  }
-  
   .main {
-    padding: 6px;
+    width: 100vw;
+    margin: 24px 0;
+    border-radius: 0;
+  }
+
+  h1, h2 {
+    margin: 0 4px;
+  }
+  
+  .button {
+    width: 80vw;
   }
 }
