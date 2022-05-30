@@ -91,7 +91,6 @@ span {
   align-items: center;
   gap: 12px;
   grid-area: input;
-  border: 1px solid red;
 }
 
 .main__button {
