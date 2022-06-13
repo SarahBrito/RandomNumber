@@ -6,28 +6,37 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="Gerador de número aleatório">
     <title>Random Number</title>
-    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="src/assets/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="src/style.css">
   </head>
   <body>
     
-    <h1>Random Number</h1>
-    
-    <h2>Defina um valor <span>minimio</span> e <span>máximo</span>  para gerar um número aleatório</h2>
-    
-    <section class='main'>
-      
-      <div class='main__result'></div>
-      
-      <div class='main__input'>
-        <input  type="number" name="min"  class="input" id="min" placeholder="Min" aria-label="Número minimo" > 
-        <input type="number" name="max" class="input" id="max" placeholder="Máx" aria-label="Número máximo" >
-      </div>
-    
-      <div class="main__button"><input type="button" value="Gerar" class="button" onclick= "generateNumber()"></div>
 
-    </section>
+    <div class="container">
+      <header class="header">
+        <h1 class="header__title">Random Number</h1>
+        <p>Defina um valor <span>minimio</span> e <span>máximo</span>  para gerar um número aleatório</p>
+      </header>
+      
+      
+      <section class='main'>
+        
+        <div class='main__result'>50</div>
+        
+        <div class='main__input'>
+          <input  type="number" name="min"  class="input" id="min" placeholder="Min" aria-label="Número minimo" > 
+          <input type="number" name="max" class="input" id="max" placeholder="Máx" aria-label="Número máximo" >
+        </div>
+      
+        <div class="main__button">
+          <input type="button" value="Gerar" class="button" onclick= "generateNumber()">
+        </div>
+  
+      </section>
+    </div>
+    
     <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
     <script src="sweetalert2.all.min.js"></script>
-    <script src="script.js"></script>
+    <script src="src/script.js"></script>
   </body>
 </html>

@@ -1,0 +1,136 @@
+@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@600;800&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Manrope', sans-serif;
+}
+
+body {
+  background: #fafbff;
+  background-image: url('assets/background.svg');
+  background-repeat: no-repeat;
+  background-size: cover 25vh;
+}
+
+.header {
+  text-align: center;
+}
+
+.header__title {
+  font-size: 24px;
+  color: #293356;
+  font-weight: 800;
+  margin-bottom: 12px;
+}
+
+.header p {
+  font-size: 15px;
+  color: #858fad;
+  padding: 0 6px;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  gap: 80px;
+}
+
+.main {
+  width: 500px;
+  height: 350px;
+  background: #fff;
+  padding: 24px;
+  border-radius: 6px;
+  display: grid;
+  grid-template-areas: "result input"
+                        "button button";
+  justify-content: space-between;
+  align-items: center;
+  -webkit-box-shadow: 0px 3px 10px 0px #bdccff;
+  -moz-box-shadow: 0px 3px 10px 0px #bdccff;
+  box-shadow: 0px 3px 10px 0px #bdccff;
+}
+
+.main__result, .main__input, .main__button {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.main__result {
+  grid-area: result;
+  width: 200px;
+  font-size: 36px;
+  color: #293356;
+  font-weight: 800;
+}
+
+.main__input {
+  grid-area: input;
+  width: 200px;
+  padding: 24px;
+  gap: 24px;
+}
+
+.input {
+  padding: 6px;
+  width: 90%;
+  border: none;
+  border-bottom: 2px solid #10d5c2;
+  outline: none;
+}
+
+.main__button {
+  grid-area: button;
+  margin: 0 auto;
+  width: 90%;
+}
+
+.button {
+  width: 100%;
+  padding: 8px;
+  cursor: pointer;
+  background: #293356;
+  color: #bdccff;
+  font-size: 15px;
+  font-weight: 800;
+  border-radius: 50px;
+  border: none;
+}
+
+.input:hover, .button:hover {
+  transition: .3s ease-in-out;
+}
+
+.input:focus {
+  -webkit-box-shadow: 0px 7px 10px 0px #a5f3eb61;
+  -moz-box-shadow: 0px 7px 10px 0px #a5f3eb61;
+  box-shadow: 0px 7px 10px 0px #a5f3eb61;
+}
+
+.button:hover, .button:focus {
+  -webkit-box-shadow: 0px 7px 10px 0px #bdccff;
+  -moz-box-shadow: 0px 7px 10px 0px #bdccff;
+  box-shadow: 0px 7px 10px 0px #bdccff;
+}
+
+@media(max-width: 550px){
+  .main {
+    width: 95%;
+    padding: 0;
+  }
+
+  .main__result {
+    width: 45vw;
+  }
+
+  .main__input {
+    width: 45vw;
+  }
+}
